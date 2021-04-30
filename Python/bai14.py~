@@ -1,0 +1,9 @@
+a=raw_input('Nhap day so nhi phan : ')
+ds=a.split(',')
+b=[]
+for x in ds:
+    y=int(x,2)
+    if i % 5 == 0:
+        print x,','
+    
+        

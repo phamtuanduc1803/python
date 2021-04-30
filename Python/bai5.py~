@@ -1,0 +1,10 @@
+class chuoi():
+    def _init_(self):
+        seft.s=""
+    def Input(self):
+        self.s=raw_input('Nhap chuoi : ')
+    def Output(self):
+        print ('Chuoi chuyen thanh chu hoa : ',self.s.upper())
+bai5=chuoi()
+chuoi.Input()
+chuoi.Output()

@@ -1,0 +1,3 @@
+s=raw_input('Nhap dong chu : ')
+word=[s.split(' ')]
+print word

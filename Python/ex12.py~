@@ -1,0 +1,2 @@
+word='phamtuanduc'
+word.find('u')

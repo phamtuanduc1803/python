@@ -1,0 +1,15 @@
+total=0
+count=0
+
+while True:
+    num=input('Enter a  number: ')
+    try:
+        n=int(num)
+        total=total+n
+        count=count+1
+    except 'done':
+        break
+    except:
+        print('Invalid input')
+average=total/count
+print(total,count,average)

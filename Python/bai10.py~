@@ -1,0 +1,7 @@
+X=(int)(raw_input('Nhap X : '))
+Y=(int)(raw_input('Nhap Y : '))
+array=[[0 for Y in range(Y)] for X in range(X)]
+for i in range(X):
+    for j in range(Y):
+        array[i][j]=i*j
+print array

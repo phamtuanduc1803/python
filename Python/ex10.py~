@@ -1,0 +1,4 @@
+fruit='banana'
+for character in fruit:
+    print(character)
+    

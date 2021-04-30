@@ -1,0 +1,48 @@
+def chessBoardCellColor(cell1,cell2):
+    return (ord(cell1[0])+int(cell1[1]))%2==(ord(cell2[0])+int(cell2[1]))%2
+
+def bishopAndPawn(bishop,pawn):
+    if bishop==pawn:
+        return False
+    return abs((ord(bishop[0])-ord(pawn[0])))==abs(int(bishop[1])-int(pawn[1]))
+               
+def spiralNumbers(n):
+    arr=[]
+    for i in range(0,n):
+        a=[0]*n
+        arr.append(a)
+    i=0
+    j=0
+    k=n-1
+    c=1
+    while c<n*n:
+        while j<k:
+            arr[i][j]+=c
+            c+=1
+            j+=1
+        while i<k:
+            arr[i][j]+=c
+            c+=1
+            i+=1
+        while j>(n-1-k):
+            arr[i][j]+=c
+            c+=1
+            j-=1
+        while i>(n-k):
+            arr[i][j]+=c
+            c+=1
+            i-=1
+        k-=1
+    arr[i][j]=n*n
+    return arr
+
+
+
+
+
+
+
+
+
+
+

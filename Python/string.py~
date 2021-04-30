@@ -1,0 +1,38 @@
+def checkStrongPassword(password):
+    if (len(password)>=6):
+        kt1=False
+        kt2=False
+        kt3=False
+        kt4=False
+        for i in password:
+            if '0'<=i<='9':
+                kt1=True
+            if 'a'<=i<='z':
+                kt2=True
+            if 'A'<=i<='Z':
+                kt3=True
+            if '!'<=i<='+':
+                kt4=True
+        return kt1 and kt2 and kt3 and kt4
+    return False
+def amendTheSentence(s):
+    r=""
+    for i in s:
+        if i.isupper():
+            r+=" "+i.lower()
+        else:
+            r+=i
+    r=r.strip() # strip() dung de loai bo cac ki tu thua o dau va cuoi,mac dinh la space
+    return r
+def checkPalindrome(inputString):
+    j=len(inputString)-1
+    for i in inputString:
+        if i==inputString[j]:
+            j-=1
+        else:
+            return False
+    return True
+def formatString(inputt):
+    return ' '.join(inputt.split())
+print(formatString(" aaa  a   a  asa  "))
+#15

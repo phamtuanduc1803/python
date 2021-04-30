@@ -1,0 +1,3 @@
+import math
+minute=59
+aa=int(input())

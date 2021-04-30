@@ -1,0 +1,21 @@
+import re
+x=raw_input("Nhap mat khau : ")
+s=x.split(',')
+thoaman=[]
+for i in s:
+    if len(i)<6 or len(i)>12:
+        continue
+    else:
+        pass
+    if not re.search(r"[a-z]",p):
+        continue
+    elif not re.search(r"[0-9]",p):
+        continue
+    elif not re.search(r"[A-Z]",p):
+        continue
+    elif not re.search(r"[@#$]",p):
+        continue
+    else:
+        pass
+    thoaman.append(p)
+print ",".join(thoaman)

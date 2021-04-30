@@ -1,0 +1,7 @@
+import math
+item=[input("Nhap cac so d : ").split(',')]
+c=50
+h=30
+for d in item:
+   q=(int)(round(math.sqrt((2*c*d)/h)))
+   print ' 'q

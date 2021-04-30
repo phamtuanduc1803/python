@@ -1,0 +1,9 @@
+res=[]
+l=int(input())
+for i in range(l):
+    n=int(input())
+    res.append(n)
+s=""
+for i in res:
+    s+=str(i)
+print(s)
